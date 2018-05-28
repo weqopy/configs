@@ -1,8 +1,3 @@
-
-# export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.6/site-packages/
-# export PATH="/usr/local/opt/python@2/bin:$PATH"
-# export PATH=/usr/local/bin/openssl:$PATH
-
 export HOMEBREW_NO_AUTO_UPDATE=true
 export ZSH=~/.oh-my-zsh
 ZSH_THEME="robbyrussell"
@@ -12,9 +7,11 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git autojump)
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 source $ZSH/oh-my-zsh.sh
+source ~/.bash_profile
 
 # User configuration
 # Terminal
+alias py='python3'
 alias la='ls -a'
 alias -s py=vim
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
@@ -43,6 +40,3 @@ alias mgp='brew services stop mongodb'
 
 alias jn='cd;sv;cd ~/Documents/pyfiles;jupyter notebook'
 
-
-export mysql_username='root'
-export mysql_password='1230'
