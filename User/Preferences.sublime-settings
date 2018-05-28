@@ -1,0 +1,45 @@
+{
+	"auto_formatting": true,
+	"bold_folder_labels": true,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"default_encoding": "UTF-8",
+	"default_line_ending": "unix",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		".gitignore"
+	],
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		"__pycache__",
+		".git",
+		"venv",
+		".idea",
+		".ipynb_checkpoints",
+		".vscode"
+	],
+	"font_size": 14,
+	"format_on_save": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"open_files_in_new_window": false,
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"update_check": false,
+	"word_wrap": true,
+	"rulers": [80]
+}

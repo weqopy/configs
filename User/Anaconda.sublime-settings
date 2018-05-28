@@ -1,0 +1,11 @@
+{
+    "anaconda_linting": true,
+    //保存文件后自动pep8格式化
+    "auto_formatting": true,
+    "pep8_ignore": ["E402", "E741", "E305", "E401", "E722"],
+    "swallow_startup_errors": true,
+    "autoformat_ignore":
+    [
+        "E309", "E722"
+    ],
+}

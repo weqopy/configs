@@ -1,0 +1,36 @@
+// 将键绑定放入此文件中以覆盖默认值
+[
+    {
+        "key": "cmd+b",
+        "command": "workbench.action.debug.run",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "cmd+k cmd+v",
+        "command": "markdown.showPreviewToSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+k v",
+        "command": "-markdown.showPreviewToSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-deleteLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "workbench.action.closePanel",
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+]
