@@ -1,17 +1,19 @@
 export HOMEBREW_NO_AUTO_UPDATE=true
-DISABLE_UPDATE_PROMPT=true
 export ZSH=~/.oh-my-zsh
-# ZSH_THEME="ys"
 ZSH_THEME="customize"
+ZSH_CUSTOM=~/Dropbox/repositories/profiles/custom
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
+DISABLE_UPDATE_PROMPT=true
+
 plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
+
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 source $ZSH/oh-my-zsh.sh
 source ~/.bash_profile
 
-# User configuration
+# User alias
 # Terminal
 alias py='python3'
 alias la='ls -a'
@@ -38,7 +40,3 @@ alias msp='mysql.server stop'
 alias ms='mysql -u root -p'
 alias mgt='brew services start mongodb'
 alias mgp='brew services stop mongodb'
-
-alias jn='cd;sv;cd ~/Dropbox/repositories/pyfiles;jupyter notebook'
-
-
