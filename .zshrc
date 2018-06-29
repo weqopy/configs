@@ -15,8 +15,10 @@ source ~/.bash_profile
 
 # User alias
 # Terminal
-alias py='python3'
+alias ls='ls -Gv'
 alias la='ls -a'
+alias rm='rm -i'
+alias rmt='trash'
 alias -s py=vim
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias pipup='pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
@@ -24,19 +26,27 @@ alias pfr='pip freeze > requirements.txt'
 alias pir='pip install -r requirements.txt'
 alias tmt='tmux a -t tmp'
 alias tms='tmux a -t ssh'
-alias bc='brew cask'
-# alias ls='ls -v'
+
+trash()
+{
+    mv $@  ~/trash/
+}
 
 # virtualenv
 alias sv='source venv/bin/activate'
 alias da='deactivate'
-alias pes='pipenv shell'
+alias pe='pipenv'
 
 # app
+alias bc='brew cask'
+alias py='python3'
 alias vim=mvim
 alias vi="/usr/local/bin/vim"
 alias mst='mysql.server start'
 alias msp='mysql.server stop'
-alias ms='mysql -u root -p'
+alias dbm='mysql -u root -p'
+alias dbs='sqlite3'
 alias mgt='brew services start mongodb'
 alias mgp='brew services stop mongodb'
+
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
