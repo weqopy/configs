@@ -1,8 +1,8 @@
+ZSH_CUSTOM=~/Dropbox/repositories/profiles/custom
+ZSH_THEME="customize"
+DISABLE_AUTO_UPDATE="true"
 export HOMEBREW_NO_AUTO_UPDATE=true
 export ZSH=~/.oh-my-zsh
-ZSH_THEME="customize"
-ZSH_CUSTOM=~/Dropbox/repositories/profiles/custom
-DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 DISABLE_UPDATE_PROMPT=true
@@ -18,7 +18,6 @@ source ~/.bash_profile
 alias ls='ls -Gv'
 alias la='ls -a'
 alias rm='rm -i'
-alias rmt='trash'
 alias -s py=vim
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias pipup='pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
@@ -27,6 +26,7 @@ alias pir='pip install -r requirements.txt'
 alias tmt='tmux a -t tmp'
 alias tms='tmux a -t ssh'
 
+alias rmt='trash'
 trash()
 {
     mv $@  ~/trash/
@@ -41,7 +41,7 @@ alias pe='pipenv'
 alias bc='brew cask'
 alias py='python3'
 alias vim=mvim
-alias vi="/usr/local/bin/vim"
+alias vi="mvim -v"
 alias mst='mysql.server start'
 alias msp='mysql.server stop'
 alias dbm='mysql -u root -p'
@@ -49,4 +49,3 @@ alias dbs='sqlite3'
 alias mgt='brew services start mongodb'
 alias mgp='brew services stop mongodb'
 
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
