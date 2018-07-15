@@ -1,4 +1,3 @@
-ZSH_CUSTOM=~/Dropbox/repositories/profiles/custom
 ZSH_THEME="customize"
 DISABLE_AUTO_UPDATE="true"
 export HOMEBREW_NO_AUTO_UPDATE=true

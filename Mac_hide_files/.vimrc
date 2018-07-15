@@ -1,8 +1,11 @@
-" syntax enable " 打开语法高亮
 syntax on " 允许按指定主题进行语法高亮，而非默认高亮主题
 set nocompatible " be iMproved, required
 filetype off " required
 
+syntax enable
+" set background=dark
+" let g:solarized_termcolors=256
+colorscheme solarized
 
 " Vundle-Plugin
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -26,8 +29,8 @@ set guioptions-=L
 set guioptions-=b
 
 set guifont=Monaco:h12 " 字体
-set guicursor=a:ver100-blinkon0 " 设置光标，a 所有模式，100, 100%高度，无闪烁，ver 垂直线，hor 水平线
-set cursorline " 高亮所在行
+set guicursor=a:ver20-blinkon0 " 设置光标，a 所有模式，100, 100%高度，无闪烁，ver 垂直线，hor 水平线
+" set cursorline " 高亮所在行
 " set cursorcolumn
 hi Cursorline cterm=NONE ctermbg=gray ctermfg=green guibg=NONE guifg=NONE
 hi Cursorcolumn cterm=NONE ctermbg=gray ctermfg=green guibg=NONE guifg=NONE
