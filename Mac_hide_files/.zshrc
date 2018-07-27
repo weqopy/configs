@@ -39,12 +39,16 @@ alias pe='pipenv'
 # app
 alias bc='brew cask'
 alias py='python3'
+alias ip='ipython'
 alias vim=mvim
 alias vi="mvim -v"
-alias mst='mysql.server start'
-alias msp='mysql.server stop'
-alias dbm='mysql -u root -p'
-alias dbs='sqlite3'
-alias mgt='brew services start mongodb'
-alias mgp='brew services stop mongodb'
+alias ms='mysql -u root -p'
+alias mysqlst='brew services start mysql@5.7'
+alias mysqlsp='brew services stop mysql@5.7'
+alias mongodbst='brew services start mongodb'
+alias mongodbsp='brew services stop mongodb'
+alias redisst='brew services start redis'
+alias redissp='brew services stop redis'
+alias nginxst='brew services start nginx'
+alias nginxsp='brew services stop nginx'
 

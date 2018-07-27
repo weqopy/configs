@@ -40,7 +40,7 @@ set confirm " 在处理未保存或只读文件的时候，弹出确认
 set tabstop=4
 set softtabstop=4 " 统一缩进为4
 set shiftwidth=4 " 统一缩进为4
-set textwidth=79
+" set textwidth=79
 set fileformat=unix
 set expandtab " 使用空格代替制表符
 set number " 显示行数

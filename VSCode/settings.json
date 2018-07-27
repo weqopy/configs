@@ -1,29 +1,13 @@
 {
-    // Python 配置
-    "python.pythonPath": "~/venv/bin/python",
-    "python.venvPath": "~/venv/",
-    "python.formatting.provider": "black",
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.lintOnSave": true,
-    "python.linting.ignorePatterns": [
-        ".vscode/*.py",
-        "**/site-packages/**/*.py",
-        ".eggs/**",
-    ],
-    //
     // 工作区设置
-    "workbench.colorTheme": "Solarized Light",
-    "workbench.colorCustomizations": {
-        "editor.selectionHighlightBackground": "#caf0f3fa",
-        "editor.selectionBackground": "#99eafc"
-    },
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.iconTheme": null,
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.feedback.visible": false,
     //
     // 编辑器设置
-    "editor.wordWrap": "on",
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Monaco, Source Code Pro",
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
     "editor.quickSuggestions": {
@@ -31,16 +15,17 @@
         "comments": true,
         "strings": true
     },
-    "editor.fontFamily": "Monaco",
-    "editor.fontSize": 13,
     "editor.renderWhitespace": "boundary",
     "editor.renderIndentGuides": false,
     "editor.roundedSelection": false,
+    "editor.wordWrap": "on",
     "editor.wrappingIndent": "indent",
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
     "editor.acceptSuggestionOnEnter": "smart",
     "editor.showFoldingControls": "always",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSaveTimeout": 500,
+    "editor.renderControlCharacters": true,
     //
     // 终端设置
     "terminal.integrated.rightClickBehavior": "selectWord",
@@ -55,17 +40,11 @@
         "**/.idea": true,
         "**/.ipynb_checkpoints": true,
         "**/.gitignore": true,
-        "**.pyc": true,
+        "*.pyc": true,
         "**/.github": true,
     },
     "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/extra_apps": true,
-        "**/mxpro/static": true,
-        "**/mxpro/media": true,
-        "**/mxoline-project/static": true,
-        "**/mxoline-project/media": true,
+        "venv": true,
     },
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
@@ -83,8 +62,9 @@
     // 插件设置
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
+    "extensions.closeExtensionDetailsOnViewChange": true,
     "sync.gist": "21b33ccd186475771f3c20ca77d38768",
-    "sync.lastUpload": "2018-07-07T12:58:24.692Z",
+    "sync.lastUpload": "2018-07-27T05:29:05.455Z",
     "sync.lastDownload": "2018-03-31T04:47:51.045Z",
     "sync.forceDownload": false,
     "sync.quietSync": true,
@@ -99,6 +79,9 @@
     "gitlens.defaultDateStyle": "absolute",
     "gitlens.defaultDateFormat": "YY-MM-DD HH:mm:ss",
     "gitlens.statusBar.alignment": "left",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
     "bracketPairColorizer.forceUniqueOpeningColor": true,
     "bracketPairColorizer.consecutivePairColors": [
         "()",
@@ -107,8 +90,7 @@
         [
             "DeepSkyBlue",
             "Orchid",
-            "Aqua",
-            "Blue"
+            "Aqua"
         ],
         "Red"
     ],
