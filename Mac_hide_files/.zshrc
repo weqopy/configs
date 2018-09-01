@@ -24,6 +24,7 @@ alias pfr='pip freeze > requirements.txt'
 alias pir='pip install -r requirements.txt'
 alias tmt='tmux a -t tmp'
 alias tms='tmux a -t ssh'
+alias bsl='brew services list'
 
 alias rmt='trash'
 trash()
@@ -51,4 +52,9 @@ alias redisst='brew services start redis'
 alias redissp='brew services stop redis'
 alias nginxst='brew services start nginx'
 alias nginxsp='brew services stop nginx'
+
+
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
