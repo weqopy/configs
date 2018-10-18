@@ -36,6 +36,7 @@ trash()
 alias sv='source venv/bin/activate'
 alias da='deactivate'
 alias pe='pipenv'
+alias sev='source ~/env-videoup/bin/activate'
 
 # app
 alias bc='brew cask'
