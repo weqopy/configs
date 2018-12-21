@@ -17,7 +17,6 @@ source ~/.bash_profile
 alias ls='ls -Gv'
 alias la='ls -a'
 alias rm='rm -i'
-alias -s py=vim
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias pipup='pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
 alias pfr='pip freeze > requirements.txt'
@@ -33,10 +32,9 @@ trash()
 }
 
 # virtualenv
-alias sv='source venv/bin/activate'
+alias sv='source ~/env/bin/activate'
 alias da='deactivate'
-alias pe='pipenv'
-alias sev='source ~/env-videoup/bin/activate'
+alias sz='source ~/.zshrc'
 
 # app
 alias bc='brew cask'
