@@ -1,10 +1,9 @@
 ZSH_THEME="customize"
-DISABLE_AUTO_UPDATE="true"
 export HOMEBREW_NO_AUTO_UPDATE=true
 export ZSH=~/.oh-my-zsh
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
-DISABLE_UPDATE_PROMPT=true
+DISABLE_AUTO_UPDATE="true"
 
 plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
 
@@ -21,8 +20,6 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias pipup='pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
 alias pfr='pip freeze > requirements.txt'
 alias pir='pip install -r requirements.txt'
-alias tmt='tmux a -t tmp'
-alias tms='tmux a -t ssh'
 alias bsl='brew services list'
 
 alias rmt='trash'
@@ -57,3 +54,13 @@ export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
+
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+alias jkstart='cd ~/repos/weqopy.github.io && rm -rf _site && jekyll s -I'
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+export PATH="/usr/local/opt/ruby/bin:$PATH"
