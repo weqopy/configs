@@ -57,10 +57,11 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
 alias jkstart='cd ~/repos/weqopy.github.io && rm -rf _site && jekyll s -I'
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
