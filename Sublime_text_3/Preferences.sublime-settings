@@ -1,11 +1,9 @@
 {
-	"auto_formatting": true,
 	"bold_folder_labels": true,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
-	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
@@ -18,13 +16,13 @@
 	[
 		"__pycache__",
 		".git",
-		"venv",
+		"env",
 		".idea",
 		".ipynb_checkpoints",
 		".vscode"
 	],
-	"font_size": 14,
-	"format_on_save": true,
+	"font_face": "Monaco",
+	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -33,13 +31,23 @@
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
+	"match_brackets": false,
+	"match_brackets_angle": false,
+	"match_brackets_braces": false,
+	"match_brackets_content": false,
+	"match_brackets_square": false,
+	"match_tags": false,
+	"mini_diff": false,
 	"open_files_in_new_window": false,
+	"save_on_focus_lost": true,
 	"scroll_past_end": true,
 	"show_encoding": true,
+	"show_full_path": true,
+	"show_git_status": false,
+	"sublack.black_on_save": true,
+	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
-	"word_wrap": true,
-	"rulers": [80]
+	"word_wrap": true
 }
