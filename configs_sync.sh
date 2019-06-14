@@ -8,9 +8,9 @@ cp -f ~/.tmux.conf ~/repos/configs/iTerm2/.tmux.conf
 cp -f ~/.oh-my-zsh/custom/my_patches.zsh ~/repos/configs/iTerm2/my_patches.zsh
 echo "-----iTerm configs synced.-----"
 
-cd ~/repos/configs
-git add . && git commit -m "iTerm configs sync"
-echo "-----iTerm configs committed.-----"
+# cd ~/repos/configs
+# git add . && git commit -m "iTerm configs sync"
+# echo "-----iTerm configs committed.-----"
 sleep 1
 
 echo "-----Snipaste cleaning...-----"
