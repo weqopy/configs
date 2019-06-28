@@ -44,6 +44,7 @@ set shiftwidth=4 " 统一缩进为4
 set fileformat=unix
 set expandtab " 使用空格代替制表符
 set number " 显示行数
+set relativenumber
 set encoding=utf-8 " 编码
 set fileencodings=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936,utf-16,big5,euc-jp,latin1 " 设置多编码处理
 set langmenu=zn_CN.UTF-8

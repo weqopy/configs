@@ -5,7 +5,7 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting sublime history)
+plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting sublime)
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
@@ -17,6 +17,7 @@ source ~/.zsh_accountrc
 alias upgrade_oh_my_zsh_alias="cd ~/.oh-my-zsh && gst && upgrade_oh_my_zsh && gst apply && cd"
 
 # Terminal & Homebrew
+alias sz='source ~/.zshrc'
 alias ls='ls -Gv'
 alias la='ls -a'
 alias rm='rm -i'
@@ -47,7 +48,6 @@ alias pir='pip install -r requirements.txt'
 # virtualenv
 alias sv='source ~/env/bin/activate'
 alias da='deactivate'
-alias sz='source ~/.zshrc'
 
 # git
 # .oh-my-zsh/plugins/git/git.plugin.zsh
@@ -70,6 +70,9 @@ alias grb='git rebase'
 alias gs="git status"
 alias gsh="git show"
 alias gst="git stash"
+alias gsta="git stash apply"
+alias gstc="git stash clear"
+alias gt="git tag"
 
 # work
 alias sshsc="~/sc/ssh_configs/dev_mk.sh"
