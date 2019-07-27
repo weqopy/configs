@@ -13,17 +13,12 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh_accountrc
 
 # ============ALIAS============
-# upgrade_oh_my_zsh
-alias upgrade_oh_my_zsh_alias="cd ~/.oh-my-zsh && gst && upgrade_oh_my_zsh && gst apply && cd"
-
 # Terminal & Homebrew
 alias sz='source ~/.zshrc'
 alias ls='ls -Gv'
 alias la='ls -a'
 alias rm='rm -i'
 alias bc='brew cask'
-alias py='python3'
-alias ip='ipython'
 alias vim=mvim
 alias vi="mvim -v"
 alias ms='mysql -u root -p'
@@ -54,19 +49,26 @@ alias da='deactivate'
 alias ga='git add'
 alias gaa='git add --all'
 alias gb='git branch'
-alias gba='git branch -a'
 alias gbd='git branch -d'
 alias gc="git commit"
+alias gcb='git checkout -b'
+alias gcl='git clone --recurse-submodules'
 alias gcm="git commit -m"
+alias gcam="git commit -am"
 alias gco="git checkout"
+alias gcp='git cherry-pick'
 alias gd='git diff'
 alias gf='git fetch'
 alias gl="git log"
 alias gm="git merge"
-alias gpl="git pull"
-alias gps="git push"
-alias gr="git reset"
+# alias gpl="git pull"
+alias gpl='git pull origin "$(git_current_branch)"'
+# alias gps="git push"
+alias gps='git push origin "$(git_current_branch)"'
 alias grb='git rebase'
+alias grm='git remote'
+alias grs="git reset"
+alias grv='git revert'
 alias gs="git status"
 alias gsh="git show"
 alias gst="git stash"
@@ -75,8 +77,9 @@ alias gstc="git stash clear"
 alias gt="git tag"
 
 # work
-alias sshsc="~/sc/ssh_configs/dev_mk.sh"
-alias sshzs="~/sc/ssh_configs/zs_mk.sh"
+alias crmdev="~/sc/ssh_configs/crm_dev.sh"
+alias crmmt="~/sc/ssh_configs/crm_master.sh"
+alias dcdev="~/sc/ssh_configs/dc_dev.sh"
 
 # Personal
 alias jkstart='cd ~/repos/weqopy.github.io && rm -rf _site && jekyll s -I'
