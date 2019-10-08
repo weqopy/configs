@@ -149,6 +149,6 @@ let g:pymode_python = 'python3'
 
 
 if has('python3')
-  set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/3.7
+  set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/Current
 endif
 

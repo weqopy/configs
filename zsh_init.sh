@@ -1,6 +1,9 @@
 export HOMEBREW_NO_AUTO_UPDATE=true
 source /usr/local/share/antigen/antigen.zsh
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=grey'
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE='20'
+
 antigen use oh-my-zsh
 antigen bundle gitfast
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -8,7 +11,6 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle sublime
 antigen bundle rupa/z z.sh
-antigen bundle weqopy/configs my_patches.zsh
 antigen theme weqopy/configs weqopy.zsh-theme
 
 antigen apply
