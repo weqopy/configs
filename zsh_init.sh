@@ -78,4 +78,4 @@ alias gstc="git stash clear"
 alias gt="git tag"
 
 # Personal
-alias jkstart='cd ~/repos/weqopy.github.io && rm -rf _site && jekyll s -I'
+alias jkstart='cd ~/repos/weqopy.github.io && rm -rf _site && jekyll s -I --drafts'
