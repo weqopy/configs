@@ -14,13 +14,13 @@ for item in items:
     item_stats = os.stat(folder + item)
     create_time = datetime.fromtimestamp(item_stats.st_mtime)
     if (now - create_time).days > 30:
-        move(folder + item, trash)
+        os.remove(folder + item)
         i += 1
 
 if i > 0:
-    print(f"moved {i} files.")
+    print(f"deleted {i} files.")
 else:
-    print("no files moved.")
+    print("no files deleted.")
 
 print(f"{len(items)-i} files stayed.")
 
@@ -38,3 +38,4 @@ for dirpath, dirnames, filenames in os.walk(configs):
     for filename in filenames:
         z.write(os.path.join(dirpath, filename))
 z.close()
+print("new backup_file created.")
