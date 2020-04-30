@@ -11,7 +11,8 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle sublime
 antigen bundle rupa/z z.sh
-antigen theme weqopy/configs weqopy.zsh-theme
+antigen theme weqopy/configs themes/weqopy.zsh-theme
+# antigen theme robbyrussell/oh-my-zsh themes/robbyrussell
 
 antigen apply
 
