@@ -27,7 +27,7 @@ print(f"{len(items)-i} files stayed.")
 
 print("Alfred configs backup")
 
-backup_file = user_name + "Library/Mobile Documents/com~apple~CloudDocs/alfred_configs.zip"
+backup_file = user_name + "Library/Mobile Documents/com~apple~CloudDocs/Personal/alfred_configs.zip"
 if os.path.exists(backup_file):
     print("old backup_file exists.")
     os.remove(backup_file)
