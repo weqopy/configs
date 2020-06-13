@@ -27,13 +27,13 @@ print(f"{len(items)-i} files stayed.")
 
 print("Alfred configs backup")
 
-backup_file = user_name + "Library/Mobile Documents/com~apple~CloudDocs/Personal/alfred_configs.zip"
+backup_file = user_name + "Documents/Personal/alfred_configs.zip"
 if os.path.exists(backup_file):
     print("old backup_file exists.")
     os.remove(backup_file)
 
 z = zipfile.ZipFile(backup_file, 'w', zipfile.ZIP_DEFLATED)
-configs = user_name + "Dropbox/Alfred.alfredpreferences"
+configs = user_name + ".alfred/Alfred.alfredpreferences"
 for dirpath, dirnames, filenames in os.walk(configs):
     for filename in filenames:
         z.write(os.path.join(dirpath, filename))
