@@ -58,6 +58,7 @@ alias gcl='git clone --recurse-submodules'
 alias gcm="git commit -m"
 alias gcam="git commit -am"
 alias gco="git checkout"
+alias gcop="git checkout -"
 alias gcp='git cherry-pick'
 alias gd='git diff'
 alias gf='git fetch'
