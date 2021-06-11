@@ -13,7 +13,7 @@ items = os.listdir(folder)
 for item in items:
     item_stats = os.stat(folder + item)
     create_time = datetime.fromtimestamp(item_stats.st_mtime)
-    if (now - create_time).days > 30:
+    if (now - create_time).days > 15:
         os.remove(folder + item)
         i += 1
 
