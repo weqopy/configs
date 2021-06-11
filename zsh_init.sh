@@ -51,23 +51,21 @@ alias da='deactivate'
 alias ga='git add'
 alias gaa='git add --all'
 alias gb='git branch'
-alias gbd='git branch -d'
 alias gc="git commit"
 alias gcb='git checkout -b'
 alias gcl='git clone --recurse-submodules'
+alias gca='git commit --amend'
 alias gcm="git commit -m"
 alias gcam="git commit -am"
 alias gco="git checkout"
-alias gcop="git checkout -"
+alias gco.="git checkout -- ."
 alias gcp='git cherry-pick'
 alias gd='git diff'
-alias gf='git fetch'
 alias gl="git log"
 alias gm="git merge"
 alias gpl='git pull origin "$(git_current_branch)"'
 alias gps='git push origin "$(git_current_branch)"'
 alias grb='git rebase'
-alias grm='git remote'
 alias grs="git reset"
 alias grv='git revert'
 alias gs="git status"
@@ -79,3 +77,5 @@ alias gt="git tag"
 
 # Personal
 alias jkstart='cd ~/repos/weqopy.github.io && rm -rf _site && jekyll s -I --drafts'
+export PATH="/usr/local/sbin:$PATH"
+
