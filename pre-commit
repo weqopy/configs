@@ -1,0 +1,11 @@
+local_email=$(git config --local user.email)
+company_email="scloud.com"
+
+if [[ -n $local_email && $local_email =~ $company_email ]]
+then
+    exit 0
+else
+    echo "ERROR: [pre-commit hook] Aborting because user.email config is wrong."
+    echo "For now user.email is '${local_email}'"
+    exit 1
+fi
